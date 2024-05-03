@@ -91,6 +91,15 @@ export function movieFormat(Poster,Title,Released,Director,imdbRating,Actors,Wri
                     <p class="my-3">${Plot}</p>
                 </div>
             </div>
+ <div class="row gx-2 border-bottom border-warning">
+                <div class="col col-md-2 ">
+                    <p class="my-3 text-white">imdbVotes</p>
+                </div>
+                <div class="col col-md-10">
+                    <p class="my-3">${imdbVotes}</p>
+                </div>
+            </div>
+            
         </div>`
 }
 
