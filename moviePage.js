@@ -17,7 +17,7 @@ async function renderDetails(movieName) {
    loader(container)
     let data = await getData(movieName)
     if (data.Response === "True") {
-        container.innerHTML = movieFormat(data.Poster,data.Title,data.Released,data.Director,data.imdbRating,data.Actors,data.Writer,data.Plot)
+        container.innerHTML = movieFormat(data.Poster,data.Title,data.Released,data.Director,data.imdbRating,data.Actors,data.Writer,data.Plot, data.imdbVotes)
         favBtn(data)
     }
     else {
